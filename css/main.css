@@ -1,0 +1,100 @@
+body {
+  background-color: lightgray;
+  font-family: Arial, sans-serif;
+}
+
+html {
+  max-width: 1080px;
+  margin-left: 300px;
+  margin-top: 200px;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#storyDisplay {
+  font-size: 30px;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+button {
+  font-weight: bold;
+  border-radius: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 8px 16px;
+}
+
+#speakButton {
+  background-color: gray;
+  color: white;
+}
+
+#subjectButton {
+  background-color: #1abc9c;
+  color: white;
+}
+
+#verbButton {
+  background-color: #2ecc71;
+  color: white;
+}
+
+#adjectiveButton {
+  background-color: #3498db;
+  color: white;
+}
+
+#secondNounButton {
+  background-color: #9b59b6;
+  color: white;
+}
+
+#placeButton {
+  background-color: #f1c40f;
+  color: white;
+}
+
+#generateButton {
+  background-color: #e67e22;
+  color: white;
+}
+
+#resetButton {
+  background-color: white;
+  color: black;
+}
+
+.noun {
+  background-color: #1abc9c;
+  color: white;
+}
+
+.verb {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.adjective {
+  background-color: #3498db;
+  color: white;
+}
+
+.second-noun {
+  background-color: #9b59b6;
+  color: white;
+}
+
+.place {
+  background-color: #f1c40f;
+  color: white;
+}
+
+.generated-story {
+  background-color: #e67e22;
+  color: white;
+}
