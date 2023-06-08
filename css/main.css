@@ -1,100 +1,144 @@
 body {
   background-color: lightgray;
+  /* Set the background color of the body */
   font-family: Arial, sans-serif;
+  /* Set the font family for the text */
 }
 
 html {
   max-width: 1080px;
+  /* Set the maximum width of the HTML element */
   margin-left: 300px;
+  /* Set the left margin of the HTML element */
   margin-top: 200px;
+  /* Set the top margin of the HTML element */
 }
 
 h2 {
   text-align: center;
+  /* Center align the heading */
   margin-top: 20px;
+  /* Set the top margin for the heading */
 }
 
 #storyDisplay {
   font-size: 30px;
+  /* Set the font size for the story display */
   margin-bottom: 20px;
+  /* Set the bottom margin for the story display */
   padding: 10px;
+  /* Add padding to the story display */
   font-weight: bold;
+  /* Set the font weight for the story display */
 }
 
 button {
   font-weight: bold;
+  /* Set the font weight for the buttons */
   border-radius: 10px;
+  /* Add rounded corners to the buttons */
   margin-right: 10px;
+  /* Set the right margin for the buttons */
   margin-bottom: 10px;
+  /* Set the bottom margin for the buttons */
   padding: 8px 16px;
+  /* Add padding to the buttons */
 }
 
 #speakButton {
   background-color: gray;
+  /* Set the background color for the speak button */
   color: white;
+  /* Set the text color for the speak button */
 }
 
 #subjectButton {
   background-color: #1abc9c;
+  /* Set the background color for the subject button */
   color: white;
+  /* Set the text color for the subject button */
 }
 
 #verbButton {
   background-color: #2ecc71;
+  /* Set the background color for the verb button */
   color: white;
+  /* Set the text color for the verb button */
 }
 
 #adjectiveButton {
   background-color: #3498db;
+  /* Set the background color for the adjective button */
   color: white;
+  /* Set the text color for the adjective button */
 }
 
 #secondNounButton {
   background-color: #9b59b6;
+  /* Set the background color for the second noun button */
   color: white;
+  /* Set the text color for the second noun button */
 }
 
 #placeButton {
   background-color: #f1c40f;
+  /* Set the background color for the place button */
   color: white;
+  /* Set the text color for the place button */
 }
 
 #generateButton {
   background-color: #e67e22;
+  /* Set the background color for the generate button */
   color: white;
+  /* Set the text color for the generate button */
 }
 
 #resetButton {
   background-color: white;
+  /* Set the background color for the reset button */
   color: black;
+  /* Set the text color for the reset button */
 }
 
 .noun {
   background-color: #1abc9c;
+  /* Set the background color for the noun span */
   color: white;
+  /* Set the text color for the noun span */
 }
 
 .verb {
   background-color: #2ecc71;
+  /* Set the background color for the verb span */
   color: white;
+  /* Set the text color for the verb span */
 }
 
 .adjective {
   background-color: #3498db;
+  /* Set the background color for the adjective span */
   color: white;
+  /* Set the text color for the adjective span */
 }
 
 .second-noun {
   background-color: #9b59b6;
+  /* Set the background color for the second noun span */
   color: white;
+  /* Set the text color for the second noun span */
 }
 
 .place {
   background-color: #f1c40f;
+  /* Set the background color for the place span */
   color: white;
+  /* Set the text color for the place span */
 }
 
 .generated-story {
   background-color: #e67e22;
+  /* Set the background color for the generated story span */
   color: white;
+  /* Set the text color for the generated story span */
 }

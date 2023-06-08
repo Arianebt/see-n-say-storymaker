@@ -21,6 +21,7 @@ function speakNow(string) {
 /* Event Listeners
 -------------------------------------------------- */
 // Onclick handler for the button that speaks the text contained in the above var textToSpeak
+// Get references to the HTML elements
 var subjectButton = document.getElementById('subjectButton');
 var verbButton = document.getElementById('verbButton');
 var adjectiveButton = document.getElementById('adjectiveButton');
@@ -30,6 +31,7 @@ var generateButton = document.getElementById('generateButton');
 var resetButton = document.getElementById('resetButton');
 var storyDisplay = document.getElementById('storyDisplay');
 
+// Define the phrases for different parts of the story
 var phrases = {
 	nouns: ['The turkey', 'Mom', 'Dad', 'The dog', 'My teacher', 'The elephant', 'The cat'],
 	verbs: ['sat on', 'ate', 'danced with', 'saw', "doesn't like", 'kissed'],
@@ -40,6 +42,7 @@ var phrases = {
 
 var generatedStory = '';
 
+// Event listeners for each button
 subjectButton.addEventListener('click', function () {
 	var randomIndex = Math.floor(Math.random() * phrases.nouns.length);
 	var selectedNoun = phrases.nouns[randomIndex];
@@ -54,7 +57,6 @@ verbButton.addEventListener('click', function () {
 	generatedStory += '<span class="verb">' + selectedVerb + '</span> ';
 	storyDisplay.innerHTML = generatedStory;
 	speakNow(selectedVerb);
-
 });
 
 adjectiveButton.addEventListener('click', function () {
@@ -63,7 +65,6 @@ adjectiveButton.addEventListener('click', function () {
 	generatedStory += '<span class="adjective">' + selectedAdjective + '</span> ';
 	storyDisplay.innerHTML = generatedStory;
 	speakNow(selectedAdjective);
-
 });
 
 secondNounButton.addEventListener('click', function () {
@@ -72,7 +73,6 @@ secondNounButton.addEventListener('click', function () {
 	generatedStory += '<span class="second-noun">' + selectedSecondNoun + '</span> ';
 	storyDisplay.innerHTML = generatedStory;
 	speakNow(selectedSecondNoun);
-
 });
 
 placeButton.addEventListener('click', function () {
@@ -81,7 +81,6 @@ placeButton.addEventListener('click', function () {
 	generatedStory += '<span class="place">' + selectedPlace + '</span> ';
 	storyDisplay.innerHTML = generatedStory;
 	speakNow(selectedPlace);
-
 });
 
 generateButton.addEventListener('click', function () {
@@ -105,12 +104,11 @@ generateButton.addEventListener('click', function () {
 
 var speakButton = document.getElementById('speakButton');
 speakButton.addEventListener('click', function () {
-	var textWithoutTags = generatedStory.replace(/<[^>]+>/g, '');
 	speakNow(generatedStory);
 });
-
 
 resetButton.addEventListener('click', function () {
 	generatedStory = '';
 	storyDisplay.textContent = '';
 });
+

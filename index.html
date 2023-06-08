@@ -10,11 +10,18 @@
 </head>
 
 <body>
+	<!-- Container div to centralize the content -->
 	<div class="container">
+		<!-- Display area for the generated story -->
 		<div id="storyDisplay"></div>
+
+		<!-- Button to hear the generated sentence -->
 		<button id="speakButton">Hear the sentence above</button>
 		<br />
+
+		<!-- Table to organize the buttons and pre-defined sentences -->
 		<table>
+			<!-- First row with buttons -->
 			<tr>
 				<td>
 					<button id="subjectButton">Pick a Subject</button>
@@ -32,7 +39,8 @@
 					<button id="placeButton">Pick a Place</button>
 				</td>
 			</tr>
-			<br />
+
+			<!-- Remaining rows with pre-defined sentences -->
 			<tr>
 				<td>The turkey</td>
 				<td>sat on</td>
@@ -63,7 +71,7 @@
 			</tr>
 			<tr>
 				<td>My teacher</td>
-				<td>doesn`t like</td>
+				<td>doesn't like</td>
 				<td>a barking</td>
 				<td>frog</td>
 				<td>on the grass</td>
@@ -76,7 +84,7 @@
 				<td>in my shoes</td>
 			</tr>
 			<tr>
-				<td>the cat</td>
+				<td>The cat</td>
 				<td></td>
 				<td></td>
 				<td>bug</td>
@@ -84,8 +92,11 @@
 			</tr>
 		</table>
 
+		<!-- Button to generate a random story -->
 		<button id="generateButton">Generate a Random Story</button>
+		<!-- Button to reset the story created-->
 		<button id="resetButton">Reset</button>
+
 		<script src="js/app.js"></script>
 	</div>
 </body>
