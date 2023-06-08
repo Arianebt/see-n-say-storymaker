@@ -105,6 +105,7 @@ generateButton.addEventListener('click', function () {
 
 var speakButton = document.getElementById('speakButton');
 speakButton.addEventListener('click', function () {
+	var textWithoutTags = generatedStory.replace(/<[^>]+>/g, '');
 	speakNow(generatedStory);
 });
 
